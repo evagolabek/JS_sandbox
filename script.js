@@ -161,3 +161,30 @@
 // }
 
 // findTheLongestword("thkjhskdnhis ifs ffl l something randomjjkdhfdjfhd");
+
+
+//// QUIZ EXERCISE //// 
+
+const quiz = [
+  ['best city to live in?', 'amsterdam'],
+  ['capital of Poland?', 'warsaw'],
+  ['the most beautiful city in Europe?', 'rome']
+]
+
+let score = 0;
+
+for(let i =0; i<quiz.length; i++){
+  let answer = prompt(quiz[i][0]);
+  let answerCorrect = answer.toLowerCase().trim();
+
+  if(answerCorrect===quiz[i][1]){
+    score++;
+  }
+  else{
+    alert(`Wrong answer.The correct answer is ${quiz[i][1]}`)
+  }
+}
+
+let corrrectPercent = ((score/quiz.length)*100).toFixed(2);//2 decimels limit
+
+alert(`Your answer ${score} question correctly and your correct percent is ${corrrectPercent}%`)
