@@ -201,8 +201,39 @@
 // toFahrenheit(40); 
 
 // function toCelcius(temp){
-//   let celcius = (temp - 32) * 5/9;
+//   let celcius = ((temp - 32) * 5/9);
 //   console.log(`${temp} degrees in F is ${celcius} degrees in Celcius`)
 // }
 
 // toCelcius(104);
+
+//CENTIMETERS CONVERTER
+// 1 inch === 2.54cm
+// 1 foot === 12 inches
+
+//my version
+// function toCm(feet){
+//   let centimeters = ((feet * 12) * 2.54);
+//   console.log(centimeters);
+// }
+
+// toCm(3);
+
+function toCm(feet, inches){
+  if((feet<0) || (inches<0)){
+    alert('invalid parameters')
+    return;
+  }
+
+  let centimeters = (feet*12) *2.54;
+  centimeters += inches * 2.54;
+
+console.log(`${feet} feet and ${inches} inches is equal to ${centimeters.toFixed(2)} cm`);
+
+return centimeters.toFixed(2);
+
+}
+
+toCm(12,2);
+toCm(-1,35); //invalid parameters 
+toCm(2,-23); //invalid parameters 
