@@ -31,7 +31,7 @@
 
 // console.log(toDOList);
 
-// //taking the user input and putting it into lowercase and trim from empty space etc
+//taking the user input and putting it into lowercase and trim from empty space etc
 // function addItem(arr){
 //   let answer = prompt("what would you like to add to your todo list?");
 //   let correct = answer.toLowerCase().trim();
@@ -165,26 +165,44 @@
 
 //// QUIZ EXERCISE //// 
 
-const quiz = [
-  ['best city to live in?', 'amsterdam'],
-  ['capital of Poland?', 'warsaw'],
-  ['the most beautiful city in Europe?', 'rome']
-]
+// const quiz = [
+//   ['best city to live in?', 'amsterdam'],
+//   ['capital of Poland?', 'warsaw'],
+//   ['the most beautiful city in Europe?', 'rome']
+// ]
 
-let score = 0;
+// let score = 0;
 
-for(let i =0; i<quiz.length; i++){
-  let answer = prompt(quiz[i][0]);
-  let answerCorrect = answer.toLowerCase().trim();
+// for(let i =0; i<quiz.length; i++){
+//   let answer = prompt(quiz[i][0]);
+//   let answerCorrect = answer.toLowerCase().trim();
 
-  if(answerCorrect===quiz[i][1]){
-    score++;
-  }
-  else{
-    alert(`Wrong answer.The correct answer is ${quiz[i][1]}`)
-  }
-}
+//   if(answerCorrect===quiz[i][1]){
+//     score++;
+//   }
+//   else{
+//     alert(`Wrong answer.The correct answer is ${quiz[i][1]}`)
+//   }
+// }
 
-let corrrectPercent = ((score/quiz.length)*100).toFixed(2);//2 decimels limit
+// let corrrectPercent = ((score/quiz.length)*100).toFixed(2);//2 decimels limit
 
-alert(`Your answer ${score} question correctly and your correct percent is ${corrrectPercent}%`)
+// alert(`Your answer ${score} question correctly and your correct percent is ${corrrectPercent}%`)
+
+//TEMPERATURE CONVERTER
+// celcius = (Fahr-32)*5/9
+// Fahrenheit = Celcius *9/5 +2
+
+// function toFahrenheit(temp){
+//   let fahr= temp * 9/5 +32;
+//   console.log(`${temp} degrees in C is ${fahr} degrees in F`);
+// }
+
+// toFahrenheit(40); 
+
+// function toCelcius(temp){
+//   let celcius = (temp - 32) * 5/9;
+//   console.log(`${temp} degrees in F is ${celcius} degrees in Celcius`)
+// }
+
+// toCelcius(104);
