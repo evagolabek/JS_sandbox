@@ -219,21 +219,51 @@
 
 // toCm(3);
 
-function toCm(feet, inches){
-  if((feet<0) || (inches<0)){
-    alert('invalid parameters')
-    return;
+// function toCm(feet, inches){
+//   if((feet<0) || (inches<0)){
+//     alert('invalid parameters')
+//     return;
+//   }
+
+//   let centimeters = (feet*12) *2.54;
+//   centimeters += inches * 2.54;
+
+// console.log(`${feet} feet and ${inches} inches is equal to ${centimeters.toFixed(2)} cm`);
+
+// return centimeters.toFixed(2);
+
+// }
+
+// toCm(12,2);
+// toCm(-1,35); //invalid parameters 
+// toCm(2,-23); //invalid parameters 
+
+//SCORE EXERCISE
+
+const students = [
+  {name:'john', score: 87},
+  {name:'susy', score: 97},
+  {name:'bob', score: 67},
+  {name:'peter', score: 77}
+]
+
+let totalScores = 0;
+
+for(let i=0; i<students.length; i++){
+  totalScores += students[i].score;
+}
+console.log(totalScores);
+
+let average = totalScores/students.length;
+console.log(average);
+
+for(let i=0; i<students.lenght;i++){
+  if(students[i].score>avarage){
+    students[i].betterThanAverage = true;
   }
-
-  let centimeters = (feet*12) *2.54;
-  centimeters += inches * 2.54;
-
-console.log(`${feet} feet and ${inches} inches is equal to ${centimeters.toFixed(2)} cm`);
-
-return centimeters.toFixed(2);
-
+  else{
+    students[i].betterThanAverage = false;
+  }
 }
 
-toCm(12,2);
-toCm(-1,35); //invalid parameters 
-toCm(2,-23); //invalid parameters 
+console.log(students)
