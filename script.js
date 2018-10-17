@@ -240,30 +240,55 @@
 
 //SCORE EXERCISE
 
-const students = [
-  {name:'john', score: 87},
-  {name:'susy', score: 97},
-  {name:'bob', score: 67},
-  {name:'peter', score: 77}
-]
+// const students = [
+//   {name:'john', score: 87},
+//   {name:'susy', score: 97},
+//   {name:'bob', score: 67},
+//   {name:'peter', score: 77}
+// ]
 
-let totalScores = 0;
+// let totalScores = 0;
 
-for(let i=0; i<students.length; i++){
-  totalScores += students[i].score;
-}
-console.log(totalScores);
+// for(let i=0; i<students.length; i++){
+//   totalScores += students[i].score;
+// }
+// console.log(totalScores);
 
-let average = totalScores/students.length;
-console.log(average);
+// let average = totalScores/students.length;
+// console.log(average);
 
-for(let i=0; i<students.lenght;i++){
-  if(students[i].score>avarage){
-    students[i].betterThanAverage = true;
+// for(let i=0; i<students.lenght;i++){
+//   if(students[i].score>avarage){
+//     students[i].betterThanAverage = true;
+//   }
+//   else{
+//     students[i].betterThanAverage = false;
+//   }
+// }
+
+// console.log(students)
+
+//HEX COLORS exercise
+
+(function (){
+
+  const hexValue = document.getElementById('hex-value');
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', createHex);
+
+  function createHex(){
+    const hexValues=[0, 1, 2, 3, 4, 5, 6, 7, 8,'A','B','C','D','E','F'];
+
+    let hexColor = '#';
+
+    for(let i=0;i<6;i++){
+      let random = Math.floor(Math.random() * hexValues.length);
+      //console.log(random);// random number
+      hexColor += hexValues[random];
+    }
+
+    document.body.style.backgroundColor = hexColor;
+    hexValue.textContent = hexColor;
+
   }
-  else{
-    students[i].betterThanAverage = false;
-  }
-}
-
-console.log(students)
+})();
