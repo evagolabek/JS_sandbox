@@ -270,25 +270,25 @@
 
 //HEX COLORS exercise
 
-(function (){
+// (function (){
 
-  const hexValue = document.getElementById('hex-value');
-  const btn = document.getElementById('btn');
-  btn.addEventListener('click', createHex);
+//   const hexValue = document.getElementById('hex-value');
+//   const btn = document.getElementById('btn');
+//   btn.addEventListener('click', createHex);
 
-  function createHex(){
-    const hexValues=[0, 1, 2, 3, 4, 5, 6, 7, 8,'A','B','C','D','E','F'];
+//   function createHex(){
+//     const hexValues=[0, 1, 2, 3, 4, 5, 6, 7, 8,'A','B','C','D','E','F'];
 
-    let hexColor = '#';
+//     let hexColor = '#';
 
-    for(let i=0;i<6;i++){
-      let random = Math.floor(Math.random() * hexValues.length);
-      //console.log(random);// random number
-      hexColor += hexValues[random];
-    }
+//     for(let i=0;i<6;i++){
+//       let random = Math.floor(Math.random() * hexValues.length);
+//       //console.log(random);// random number
+//       hexColor += hexValues[random];
+//     }
 
-    document.body.style.backgroundColor = hexColor;
-    hexValue.textContent = hexColor;
+//     document.body.style.backgroundColor = hexColor;
+//     hexValue.textContent = hexColor;
 
-  }
-})();
+//   }
+// })();
